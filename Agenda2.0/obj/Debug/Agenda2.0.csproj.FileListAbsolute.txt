@@ -1,0 +1,11 @@
+C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\obj\Debug\Agenda2.0.csprojAssemblyReference.cache
+C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\obj\Debug\Agenda2._0.FrmIniciar.resources
+C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\obj\Debug\Agenda2._0.FrmMenu.resources
+C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\obj\Debug\Agenda2._0.Properties.Resources.resources
+C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\obj\Debug\Agenda2.0.csproj.GenerateResource.cache
+C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\obj\Debug\Agenda2.0.csproj.CoreCompileInputs.cache
+C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\bin\Debug\Agenda2.0.exe.config
+C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\bin\Debug\Agenda2.0.exe
+C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\bin\Debug\Agenda2.0.pdb
+C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\obj\Debug\Agenda2.0.exe
+C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\obj\Debug\Agenda2.0.pdb
