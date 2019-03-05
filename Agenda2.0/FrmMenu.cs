@@ -188,7 +188,7 @@ namespace Agenda2._0
 
                 dr.Read();
 
-                //txtIdPesquisa.Text = Convert.ToString(dr["ID"]);
+                txtIdPesquisa.Text = Convert.ToString(dr["ID"]);
                 txtNomeAgenda.Text = Convert.ToString(dr["Nome"]);
                 txtRGAgenda.Text = Convert.ToString(dr["RG"]);
                 mtxtCPFAgenda.Text = Convert.ToString(dr["CPF"]);
@@ -231,6 +231,7 @@ namespace Agenda2._0
 
 
             comando.Parameters.Add("@Nome", SqlDbType.VarChar).Value = txtNomeAgenda.Text;
+            //comando.Parameters.Add("@ID", SqlDbType.Int).Value = int.Parse(txtIDAgenda.Text);
             comando.Parameters.Add("@RG", SqlDbType.VarChar).Value = txtRGAgenda.Text;
             comando.Parameters.Add("@CPF", SqlDbType.VarChar).Value = mtxtCPFAgenda.Text;
             comando.Parameters.Add("@Endereco", SqlDbType.VarChar).Value = txtEnderecoAgenda.Text;
