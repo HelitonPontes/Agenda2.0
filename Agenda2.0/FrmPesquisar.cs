@@ -122,6 +122,7 @@ namespace Agenda2._0
 
                 dr.Read();
 
+                //txtIdPesquisa.Text = Convert.ToString(dr["ID"]);
                 txtNomeAgenda.Text = Convert.ToString(dr["Nome"]);
                 txtRGAgenda.Text = Convert.ToString(dr["RG"]);
                 mtxtCPFAgenda.Text = Convert.ToString(dr["CPF"]);
@@ -149,13 +150,58 @@ namespace Agenda2._0
             }
 
 
+        }
+
+        private void btnAtualizarAgenda_Click(object sender, EventArgs e)
+        {
+
+            strSql = "Update TBLAgenda set  Nome=@Nome, RG=@RG, CPF=@CPF, Endereco=@Endereco, Numero=@Numero, Bairro=@Bairro, Cidade=@Cidade," +
+                "Email=@Email, Telefone1=@Telefone1, Telefone2=@Telefone2, telefone3=@Telefone3 where Nome=@Nome";
+
+            sqlCon = new SqlConnection(strCon);
+
+            SqlCommand comando = new SqlCommand(strSql, sqlCon);
+
+            //comando.Parameters.Add("@ID", SqlDbType.Int).Value = int.Parse(txtIdPesquisa.Text);
+
+
+            comando.Parameters.Add("@Nome", SqlDbType.VarChar).Value = txtNomeAgenda.Text;
+            comando.Parameters.Add("@RG", SqlDbType.VarChar).Value = txtRGAgenda.Text;
+            comando.Parameters.Add("@CPF", SqlDbType.VarChar).Value = mtxtCPFAgenda.Text;
+            comando.Parameters.Add("@Endereco", SqlDbType.VarChar).Value = txtEnderecoAgenda.Text;
+            comando.Parameters.Add("@Numero", SqlDbType.Int).Value = int.Parse(txtNumeroAgenda.Text);
+            comando.Parameters.Add("@Bairro", SqlDbType.VarChar).Value = txtBairroAgenda.Text;
+            comando.Parameters.Add("@Cidade", SqlDbType.VarChar).Value = txtCidadeAgenda.Text;
+            comando.Parameters.Add("@Email", SqlDbType.VarChar).Value = txtEmailAgenda.Text;
+            comando.Parameters.Add("@Telefone1", SqlDbType.VarChar).Value = mtxtTelefone1.Text;
+            comando.Parameters.Add("@Telefone2", SqlDbType.VarChar).Value = mtxtTelefone2.Text;
+            comando.Parameters.Add("@Telefone3", SqlDbType.VarChar).Value = mtxtTelefone3.Text;
+            //comando.Parameters.Add("@DataCadastro", SqlDbType.VarChar).Value = txtNomeAgenda.Text;
 
 
 
+            try
+            {
+                sqlCon.Open();
+
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("Cadastro realizado com Sucesso");
+            }
+
+            catch (Exception ex)
+
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            finally
+
+            {
+                sqlCon.Close();
+            }
 
 
-
-        } 
-   
+        }
     }
 }

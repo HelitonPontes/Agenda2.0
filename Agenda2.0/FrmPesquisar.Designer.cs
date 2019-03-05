@@ -63,6 +63,7 @@
             this.txtIdPesquisa = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnAtualizarAgenda = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -313,6 +314,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnAtualizarAgenda);
             this.panel1.Controls.Add(this.btnPesquisarAgenda);
             this.panel1.Controls.Add(this.btnNovoAgenda);
             this.panel1.Location = new System.Drawing.Point(11, 13);
@@ -470,6 +472,19 @@
             this.panel3.Size = new System.Drawing.Size(719, 119);
             this.panel3.TabIndex = 47;
             // 
+            // btnAtualizarAgenda
+            // 
+            this.btnAtualizarAgenda.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnAtualizarAgenda.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizarAgenda.Location = new System.Drawing.Point(174, 4);
+            this.btnAtualizarAgenda.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAtualizarAgenda.Name = "btnAtualizarAgenda";
+            this.btnAtualizarAgenda.Size = new System.Drawing.Size(82, 24);
+            this.btnAtualizarAgenda.TabIndex = 13;
+            this.btnAtualizarAgenda.Text = "&Atualizar";
+            this.btnAtualizarAgenda.UseVisualStyleBackColor = false;
+            this.btnAtualizarAgenda.Click += new System.EventHandler(this.btnAtualizarAgenda_Click);
+            // 
             // FrmPesquisar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -525,5 +540,6 @@
         private System.Windows.Forms.TextBox txtNomePesquisa;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnAtualizarAgenda;
     }
 }
