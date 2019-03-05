@@ -9,3 +9,4 @@ C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\bin\Debug\Agenda2.0.exe
 C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\bin\Debug\Agenda2.0.pdb
 C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\obj\Debug\Agenda2.0.exe
 C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\obj\Debug\Agenda2.0.pdb
+C:\Users\Heliton\source\repos\Agenda2.0\Agenda2.0\obj\Debug\Agenda2._0.FrmPesquisar.resources

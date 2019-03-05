@@ -52,9 +52,6 @@ namespace Agenda2._0
             mtxtTelefone3.Enabled = false;
 
 
-      
-
-
     }
 
     private void btnSairAgenda_Click(object sender, EventArgs e)
@@ -102,10 +99,22 @@ namespace Agenda2._0
             mtxtTelefone2.Clear();
             mtxtTelefone3.Clear();
 
+
+
+          
+
         }
+
+
+
+
 
         private void btnInserirAgenda_Click(object sender, EventArgs e)
         {
+
+           
+           
+
 
             strSql = "Insert into TblAgenda (Nome, RG, CPF, Endereco, Numero, Bairro, Cidade, Email, Telefone1, Telefone2," +
                     "Telefone3) values (@Nome, @RG, @CPF, @Endereco, @Numero, @BAirro,@Cidade, @Email, @Telefone1, @Telefone2," +
@@ -119,14 +128,25 @@ namespace Agenda2._0
             comando.Parameters.Add("@RG", SqlDbType.VarChar).Value = txtRGAgenda.Text;
             comando.Parameters.Add("@CPF", SqlDbType.VarChar).Value = mtxtCPFAgenda.Text;
             comando.Parameters.Add("@Endereco", SqlDbType.VarChar).Value = txtEnderecoAgenda.Text;
-            comando.Parameters.Add("@Numero", SqlDbType.Int).Value = int.Parse(txtNumeroAgenda.Text);
-            comando.Parameters.Add("@Bairro", SqlDbType.VarChar).Value = txtBairroAgenda.Text;
-            comando.Parameters.Add("@Cidade", SqlDbType.VarChar).Value = txtCidadeAgenda.Text;
-            comando.Parameters.Add("@Email", SqlDbType.VarChar).Value = txtEmailAgenda.Text;
-            comando.Parameters.Add("@Telefone1", SqlDbType.VarChar).Value = mtxtTelefone1.Text;
-            comando.Parameters.Add("@Telefone2", SqlDbType.VarChar).Value = mtxtTelefone2.Text;
-            comando.Parameters.Add("@Telefone3", SqlDbType.VarChar).Value = mtxtTelefone3.Text;
-            //comando.Parameters.Add("@DataCadastro", SqlDbType.VarChar).Value = txtNomeAgenda.Text;
+            if (txtNumeroAgenda.Text == string.Empty)
+            {
+                MessageBox.Show("Digite o Numero");
+            }
+            else
+            {
+
+
+
+                comando.Parameters.Add("@Numero", SqlDbType.Int).Value = int.Parse(txtNumeroAgenda.Text);
+                comando.Parameters.Add("@Bairro", SqlDbType.VarChar).Value = txtBairroAgenda.Text;
+                comando.Parameters.Add("@Cidade", SqlDbType.VarChar).Value = txtCidadeAgenda.Text;
+                comando.Parameters.Add("@Email", SqlDbType.VarChar).Value = txtEmailAgenda.Text;
+                comando.Parameters.Add("@Telefone1", SqlDbType.VarChar).Value = mtxtTelefone1.Text;
+                comando.Parameters.Add("@Telefone2", SqlDbType.VarChar).Value = mtxtTelefone2.Text;
+                comando.Parameters.Add("@Telefone3", SqlDbType.VarChar).Value = mtxtTelefone3.Text;
+                //comando.Parameters.Add("@DataCadastro", SqlDbType.VarChar).Value = txtNomeAgenda.Text;
+
+            }
 
             try
             {
@@ -150,7 +170,11 @@ namespace Agenda2._0
 
         }
 
-
+        private void btnPesquisarAgenda_Click(object sender, EventArgs e)
+        {
+            FrmPesquisar frm = new FrmPesquisar();
+            frm.ShowDialog();
+        }
     }
 }
  
