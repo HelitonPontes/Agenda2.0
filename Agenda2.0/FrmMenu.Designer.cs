@@ -39,6 +39,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtIdPesquisa = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtRGPesquisa = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtNomePesquisa = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtEnderecoAgenda = new System.Windows.Forms.TextBox();
@@ -61,17 +69,9 @@
             this.txtBairroAgenda = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNumeroAgenda = new System.Windows.Forms.TextBox();
-            this.txtIdPesquisa = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtRGPesquisa = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtNomePesquisa = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label12
@@ -221,6 +221,87 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(744, 477);
             this.panel2.TabIndex = 40;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(6, 311);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(50, 15);
+            this.label16.TabIndex = 55;
+            this.label16.Text = "Pesquisa";
+            // 
+            // txtIdPesquisa
+            // 
+            this.txtIdPesquisa.Location = new System.Drawing.Point(480, 357);
+            this.txtIdPesquisa.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIdPesquisa.Name = "txtIdPesquisa";
+            this.txtIdPesquisa.Size = new System.Drawing.Size(47, 20);
+            this.txtIdPesquisa.TabIndex = 52;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(477, 342);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(18, 13);
+            this.label15.TabIndex = 53;
+            this.label15.Text = "Id";
+            // 
+            // txtRGPesquisa
+            // 
+            this.txtRGPesquisa.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtRGPesquisa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRGPesquisa.Location = new System.Drawing.Point(9, 399);
+            this.txtRGPesquisa.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRGPesquisa.Name = "txtRGPesquisa";
+            this.txtRGPesquisa.Size = new System.Drawing.Size(142, 26);
+            this.txtRGPesquisa.TabIndex = 51;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(9, 378);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(33, 19);
+            this.label14.TabIndex = 50;
+            this.label14.Text = "RG";
+            // 
+            // txtNomePesquisa
+            // 
+            this.txtNomePesquisa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNomePesquisa.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNomePesquisa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomePesquisa.Location = new System.Drawing.Point(9, 351);
+            this.txtNomePesquisa.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNomePesquisa.Name = "txtNomePesquisa";
+            this.txtNomePesquisa.Size = new System.Drawing.Size(443, 19);
+            this.txtNomePesquisa.TabIndex = 49;
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Location = new System.Drawing.Point(6, 327);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(719, 119);
+            this.panel4.TabIndex = 54;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(2, 2);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(49, 19);
+            this.label13.TabIndex = 40;
+            this.label13.Text = "Nome";
             // 
             // label1
             // 
@@ -422,6 +503,7 @@
             this.btnDeletarAgenda.TabIndex = 10;
             this.btnDeletarAgenda.Text = "&Deletar";
             this.btnDeletarAgenda.UseVisualStyleBackColor = false;
+            this.btnDeletarAgenda.Click += new System.EventHandler(this.btnDeletarAgenda_Click);
             // 
             // label2
             // 
@@ -476,87 +558,6 @@
             this.txtNumeroAgenda.Size = new System.Drawing.Size(56, 26);
             this.txtNumeroAgenda.TabIndex = 10;
             // 
-            // txtIdPesquisa
-            // 
-            this.txtIdPesquisa.Location = new System.Drawing.Point(480, 357);
-            this.txtIdPesquisa.Margin = new System.Windows.Forms.Padding(2);
-            this.txtIdPesquisa.Name = "txtIdPesquisa";
-            this.txtIdPesquisa.Size = new System.Drawing.Size(47, 20);
-            this.txtIdPesquisa.TabIndex = 52;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(477, 342);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(18, 13);
-            this.label15.TabIndex = 53;
-            this.label15.Text = "Id";
-            // 
-            // txtRGPesquisa
-            // 
-            this.txtRGPesquisa.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtRGPesquisa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRGPesquisa.Location = new System.Drawing.Point(9, 399);
-            this.txtRGPesquisa.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRGPesquisa.Name = "txtRGPesquisa";
-            this.txtRGPesquisa.Size = new System.Drawing.Size(142, 26);
-            this.txtRGPesquisa.TabIndex = 51;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(9, 378);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(33, 19);
-            this.label14.TabIndex = 50;
-            this.label14.Text = "RG";
-            // 
-            // txtNomePesquisa
-            // 
-            this.txtNomePesquisa.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNomePesquisa.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNomePesquisa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomePesquisa.Location = new System.Drawing.Point(9, 351);
-            this.txtNomePesquisa.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNomePesquisa.Name = "txtNomePesquisa";
-            this.txtNomePesquisa.Size = new System.Drawing.Size(443, 19);
-            this.txtNomePesquisa.TabIndex = 49;
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Location = new System.Drawing.Point(6, 327);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(719, 119);
-            this.panel4.TabIndex = 54;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(2, 2);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 19);
-            this.label13.TabIndex = 40;
-            this.label13.Text = "Nome";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(6, 311);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(50, 15);
-            this.label16.TabIndex = 55;
-            this.label16.Text = "Pesquisa";
-            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -568,9 +569,9 @@
             this.Load += new System.EventHandler(this.FrmMenu_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

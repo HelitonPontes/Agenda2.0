@@ -268,6 +268,38 @@ namespace Agenda2._0
             }
 
         }
+
+        private void btnDeletarAgenda_Click(object sender, EventArgs e)
+        {
+            strSql = "Delete from TblAgenda where Nome=@Nome";
+
+            sqlCon = new SqlConnection(strCon);
+
+            SqlCommand comando = new SqlCommand(strSql, sqlCon);
+
+            comando.Parameters.Add("Nome", SqlDbType.VarChar).Value = txtNomeAgenda.Text;
+
+            try
+            {
+                sqlCon.Open();
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Excluido com Sucesso");
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+
+            finally
+            {
+                sqlCon.Close();
+            }
+
+
+        }
     }
 }
  
